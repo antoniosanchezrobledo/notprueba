@@ -1,0 +1,38 @@
+/* Programa que calcula el máximo entre tres números */
+#include <iostream>
+using namespace std;
+
+int main (){
+	double a = 0.0, b = 0.0, c = 0.0;
+	
+	cout << "Bienvenidos a mi programa inteligente para calcular máximos." << endl;
+	cout << "Introduzca el primer número: ";
+	cin >> a;
+	cout << "Introduzca el segundo número: ";
+	cin >> b;
+	cout << "Introduzca el tercer número: ";
+	cin >> c;
+	cout << "Versión Más eficiente CON IF-ELSE ANIDADOS" << endl; 
+	if (a > b) //a por ahora es máximo
+		if (a > c) // a es el máximo
+			cout << "El número :" << a << " es el máximo!" << endl;
+		else // c es el máximo
+			cout << "El número :" << c << " es el máximo!" << endl;
+	else // b por ahora es máximo
+		if (b > c) // b es el máximo
+			cout << "El número :" << b << " es el máximo!" << endl;
+		else // c es el máximo	
+			cout << "El número :" << c << " es el máximo!" << endl;
+			
+	cout << "Otra Versión Menos eficiente Con IF SIMPLES Y CONDICIÓN COMPUESTA" << endl;
+	if ((a >= b) && (a >= c))
+			cout << "El número :" << a << " es el máximo!" << endl;
+	if ((a < b) && (b > c))
+			cout << "El número :" << b << " es el máximo!" << endl;
+	if ((a < c) && (b < c))
+			cout << "El número :" << c << " es el máximo!" << endl;				
+	
+	cout << "Y todavía quedan otros 5 escenarios que no compruebo porque me aburro..." << endl;		
+			
+	cout << "Tas quedao flipao eh?" << endl; 
+}
